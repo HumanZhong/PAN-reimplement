@@ -1,0 +1,14 @@
+from dataset.icdar15_trainloader import IC15Dataset
+from dataset.icdar15_trainloader import IC15TestDataset
+from dataset.icdar15_trainloader import IC15Trainset_PAN
+
+from dataset.ctw1500_dataset import CTW1500TrainDataset
+from dataset.ctw1500_dataset import CTW1500Testset
+
+from dataset.ctw1500_dataset import CTW1500Trainset_Bound
+from dataset.ctw1500_dataset import CTW1500Testset_Bound
+
+from dataset.ctw1500_dataset import CTW1500Trainset_Corner
+
+
+from dataset.ctw1500e2e_dataset import CTW1500Trainset_BoundE2E
