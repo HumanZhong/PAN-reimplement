@@ -4,9 +4,9 @@ This is an unofficial pytorch re-implementation of "Efficient and Accurate Arbit
 * While PSENet is implemented in Python2, this repo uses Python3 to implement both PSENet and PAN. Compared to the PAN.pytorch repo, this repo fixes some bugs and achieves a higher f-score(but is still lower than the original paper by ~0.5%, sigh)
 
 ## How to train
-* train on icdar
+* train on icdar  
 `CUDA_VISIBLE_DEVICES=0,1,2,3 python train_icdar15_PAN.py --backbone res18/res50 --lr YOUR.LR --resume YOUR.CHECKPOINT_FILE`
-* train on ctw
+* train on ctw  
 `CUDA_VISIBLE_DEVICES=0,1,2,3 python train_ctw1500.py --backbone res18/res50 --lr YOUR.LR --resume YOUR.CHECKPOINT_FILE`
 * Other training scripts are variants which have external extension like top/bottom boundary prediction. You can check the codes for detailed information
 
