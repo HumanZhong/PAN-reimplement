@@ -5,9 +5,9 @@ This is an unofficial pytorch re-implementation of "Efficient and Accurate Arbit
 
 ## How to train
 * train on icdar
-'CUDA_VISIBLE_DEVICES=0,1,2,3 python train_icdar15_PAN.py --backbone res18/res50 --lr YOUR.LR --resume YOUR.CHECKPOINT_FILE'
+`CUDA_VISIBLE_DEVICES=0,1,2,3 python train_icdar15_PAN.py --backbone res18/res50 --lr YOUR.LR --resume YOUR.CHECKPOINT_FILE`
 * train on ctw
-'CUDA_VISIBLE_DEVICES=0,1,2,3 python train_ctw1500.py --backbone res18/res50 --lr YOUR.LR --resume YOUR.CHECKPOINT_FILE'
+`CUDA_VISIBLE_DEVICES=0,1,2,3 python train_ctw1500.py --backbone res18/res50 --lr YOUR.LR --resume YOUR.CHECKPOINT_FILE`
 * Other training scripts are variants which have external extension like top/bottom boundary prediction. You can check the codes for detailed information
 
 ## Future work & Note
