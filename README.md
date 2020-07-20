@@ -3,6 +3,12 @@ This is an unofficial pytorch re-implementation of "Efficient and Accurate Arbit
 * Thanks to the help of the official PSENet implementation[https://github.com/whai362/PSENet] and PAN.pytorch[https://github.com/WenmuZhou/PAN.pytorch]. This repo is mainly based on the PSENet repo and followed a similar framework.
 * While PSENet is implemented in Python2, this repo uses Python3 to implement both PSENet and PAN. Compared to the PAN.pytorch repo, this repo fixes some bugs and achieves a higher f-score(but is still lower than the original paper by ~0.5%, sigh)
 
+## Packages required
+* pytorch 1.1.0 & torchvision
+* Polygon3
+* pyclipper
+* pybind11(to compile the cpp version pse algorithm)
+
 ## How to train PSE
 * train on icdar  
 `CUDA_VISIBLE_DEVICES=0,1,2,3 python train_icdar15.py --backbone res18/res50 --lr YOUR.LR --resume YOUR.CHECKPOINT_FILE`
